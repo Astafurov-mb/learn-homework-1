@@ -11,10 +11,13 @@
 """
 
 def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+  try:
+   while(1):
+    texting = input('Привет, как у тебя дела?> ')
+    if texting == 'хорошо':
+      break
+  except KeyboardInterrupt:
+    print ('\n Ты куда? нормально же общались!')
     
 if __name__ == "__main__":
     hello_user()

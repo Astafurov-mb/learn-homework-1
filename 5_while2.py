@@ -18,10 +18,14 @@
 questions_and_answers = {}
 
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
+  answers_dict = {
+     'Как дела?': 'хорошо!',
+     'Что делаешь?': 'программирую',
+     'Точно программируешь?':'нет на тупые вопросы твои отвечаю'
+  }
+  question = input('Введите свой вопрос>')
+  print (answers_dict[question])
+
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)
